@@ -1,0 +1,41 @@
+// ========================================
+//
+// @file _forms.scss
+// Inputs and other various form elements
+//
+// ========================================
+
+label {
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+
+  &:focus {
+
+  }
+}
+
+textarea {
+
+  &:focus {
+
+  }
+}
+
+input[type=checkbox] {
+
+}
+
+input[type=radio] {
+
+}
+
+input[type=file] {
+
+  &:focus {
+
+  }
+}

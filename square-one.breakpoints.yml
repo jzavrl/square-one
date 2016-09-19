@@ -1,0 +1,24 @@
+square-one.screen-xs-min:
+  label: screen-xs-min
+  mediaQuery: 'all and (min-width: 420px)'
+  weight: 1
+  multipliers:
+    - 1x
+square-one.screen-sm-min:
+  label: screen-sm-min
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+square-one.screen-md-min:
+  label: screen-md-min
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 1
+  multipliers:
+    - 1x
+square-one.screen-lg-min:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 1
+  multipliers:
+    - 1x

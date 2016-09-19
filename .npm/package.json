@@ -1,0 +1,40 @@
+{
+  "name": "square-one",
+  "version": "1.0.0",
+  "description": "Drupal 7 and Drupal 8 starter theme files with Gulp tasks.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "setup": "npm install",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jzavrl/square-one"
+  },
+  "author": {
+    "name": "Jan Zavrl"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jzavrl/square-one/issues"
+  },
+  "homepage": "https://github.com/jzavrl/square-one",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-load-subtasks": "^1.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1"
+  }
+}

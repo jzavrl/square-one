@@ -1,0 +1,12 @@
+// ========================================
+//
+// @file _functions.scss
+// File containing all Sass functions
+//
+// ========================================
+
+// - - Convert px based value to rem
+@function rem($value) {
+  $rem: ($value / $base-font-size);
+  @return #{$rem}rem;
+}

@@ -1,0 +1,86 @@
+// ========================================
+//
+// @file _mixins.scss
+// File containing all Sass mixins
+//
+// ========================================
+
+// - - Output property and value in rem with px fallback
+@mixin rem($property, $values) {
+  $font-size: $base-font-size;
+  $px-values: ();
+  $rem-values: ();
+
+  @each $value in $values {
+    @if $value == 0 or $value == 0px {
+      $px-values: join($px-values, 0);
+      $rem-values: join($rem-values, 0);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
+      $new-rem-value: $value / $font-size;
+      $px-values: join($px-values, round($value));
+      $rem-values: join($rem-values, #{$new-rem-value}rem);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+      $px-values: join($px-values, #{$value});
+      $rem-values: join($rem-values, #{$value});
+    } @else if $value == auto {
+      $px-values: join($px-values, auto);
+      $rem-values: join($rem-values, auto);
+    } @else {
+      $px-values: join($px-values, round($value * $font-size));
+      $rem-values: join($rem-values, #{$value}rem);
+    }
+  }
+
+  #{$property}: $px-values;
+  #{$property}: $rem-values;
+}
+
+// - - Clearfix
+@mixin clearfix {
+	zoom: 1;
+
+	&:before,
+	&:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// - - Image for retina
+@mixin image-2x ($image, $width, $height) {
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}
+
+// - - CSS calc function
+@mixin calc ($property, $expression) {
+	#{$property}: calc(#{$expression});
+}
+
+// - - Placeholder color
+@mixin placeholder ($color, $opacity: 1) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+}

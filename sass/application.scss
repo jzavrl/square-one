@@ -1,0 +1,46 @@
+// ========================================
+//
+// @file application.scss
+// Main output file combining all the Sass imports
+//
+// ========================================
+
+// - - - - - - - - - - - - - - - - - - - -
+// Import vendor files
+// - - - - - - - - - - - - - - - - - - - -
+@import 'vendor/vendor';
+
+// - - - - - - - - - - - - - - - - - - - -
+// Import core files
+// - - - - - - - - - - - - - - - - - - - -
+@import 'core/core';
+
+// - - - - - - - - - - - - - - - - - - - -
+// Import module files
+// - - - - - - - - - - - - - - - - - - - -
+@import 'modules/modules';
+
+// - - - - - - - - - - - - - - - - - - - -
+// Import page files
+// - - - - - - - - - - - - - - - - - - - -
+@import 'pages/pages';
+
+// - - - - - - - - - - - - - - - - - - - -
+//
+// Inbox
+//
+// Inbox allows developers, and those not actively working on the project
+// to quickly add styles that are easily seen by the maintainer of the file
+//
+// - - - - - - - - - - - - - - - - - - - -
+
+
+// - - - - - - - - - - - - - - - - - - - -
+//
+// Shame
+//
+// Place for a quick fix, hack or questionable technique,
+// add it here and fix it properly later
+//
+// - - - - - - - - - - - - - - - - - - - -
+

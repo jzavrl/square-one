@@ -1,0 +1,39 @@
+// ========================================
+//
+// @file _base.scss
+// Base level tags and styles
+//
+// ========================================
+
+::selection {
+  background: lighten($color-black, 10%);
+  color: $color-white;
+}
+
+::-moz-selection {
+  background: lighten($color-black, 10%);
+  color: $color-white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-white;
+  font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  transition: 0.4s;
+}
