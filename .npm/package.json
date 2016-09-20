@@ -1,7 +1,7 @@
 {
-  "name": "square-one",
+  "name": "Square One",
   "version": "1.0.0",
-  "description": "Drupal 7 and Drupal 8 starter theme files with Gulp tasks.",
+  "description": "Drupal 7 starter theme files with Gulp tasks.",
   "main": "gulpfile.js",
   "scripts": {
     "setup": "npm install",

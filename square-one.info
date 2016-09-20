@@ -1,0 +1,21 @@
+;----------// Theme information
+
+	name = Square One
+	description = Drupal 7 starter theme files with Gulp tasks.
+	core = 7.x
+	version = 7.x
+
+;----------// Scripts
+
+	scripts[] = assets/scripts/application.js
+
+;----------// Styles
+
+	stylesheets[all][] = assets/stylesheets/application.css
+
+;----------// Regions
+
+	regions[header] = Header
+	regions[content] = Content
+	regions[sidebar] = Sidebar
+	regions[footer] = Footer
