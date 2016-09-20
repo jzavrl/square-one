@@ -1,8 +1,8 @@
 # Theme information
-name: square-one
+name: Square One
 type: theme
 base theme: classy
-description: Drupal theme files to quickly kickstart a new theme development.
+description: Drupal 8 starter theme files with Gulp tasks.
 core: 8.x
 version: 1.x
 
